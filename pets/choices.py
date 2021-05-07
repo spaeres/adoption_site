@@ -4,7 +4,7 @@ gender_choices = {
 }
 
 age_choices = {
-    'Cachorro':0,
+    '0':0,
     '1': 1,
     '2': 2,
     '3': 3,

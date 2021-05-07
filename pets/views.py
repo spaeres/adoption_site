@@ -1,7 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.core.paginator import Paginator
 from .choices import gender_choices, age_choices, size_choices
-
+from .logic.pets_logic import delete_pet
 from .models import Pet
 
 
@@ -56,10 +56,14 @@ def index(request):
 
 
 def pet(request, pet_id):
-    pet = get_object_or_404(Pet, pk=pet_id)
+    if request.GET.get('borrarpet_'+str(pet_id)):
+        delete_pet(pet_id)
+        return redirect("/")
+    else:
+        pet = get_object_or_404(Pet, pk=pet_id)
 
-    context = {
-        'pet': pet
-    }
+        context = {
+            'pet': pet
+        }
 
-    return render(request, 'pets/pet.html', context)
+        return render(request, 'pets/pet.html', context)
