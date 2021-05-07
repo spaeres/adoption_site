@@ -1,9 +1,10 @@
 gender_choices = {
-    'Female': 'Female',
-    'Male': 'Male'
+    'Hembra': 'Hembra',
+    'Macho': 'Macho'
 }
 
 age_choices = {
+    'Cachorro':0,
     '1': 1,
     '2': 2,
     '3': 3,
@@ -17,7 +18,7 @@ age_choices = {
 }
 
 size_choices = {
-  'small': 'small',
-  'medium': 'medium',
-  'large': 'large'
+  'Pequeño': 'Pequeño',
+  'Mediano': 'Mediano',
+  'Grande': 'Grande'
 }

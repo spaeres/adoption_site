@@ -81,11 +81,12 @@ WSGI_APPLICATION = 'django_adopt_me.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'adopt_me3',
-        'USER': 'postgres',
-        'PASSWORD': 'root',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'paw_pet_db',
+        'USER': 'admin_db',
+        'PASSWORD': '12345Clave',
         'HOST': 'localhost',
+        'PORT': '',
     }
 }
 

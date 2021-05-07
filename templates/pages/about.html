@@ -9,8 +9,8 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-md-12">
-                <h1 class="display-4">About Us</h1>
-                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+                <h1 class="display-4">Nosotros</h1>
+                <p class="lead">En PawPet ayudamos a los animales!</p>
             </div>
         </div>
     </div>
@@ -23,9 +23,9 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
                     <a href="{% url 'index' %}">
-                        <i class="fas fa-home"></i> Home</a>
+                        <i class="fas fa-home"></i> Inicio</a>
                 </li>
-                <li class="breadcrumb-item active"> About</li>
+                <li class="breadcrumb-item active"> Nosotros</li>
             </ol>
         </nav>
     </div>
@@ -35,7 +35,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <h2>We Love Animals</h2>
+                <h2>Amamos a los animales</h2>
                 <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
                 <img src="{% static '/img/about.jpg' %}" alt="">
                 <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia
@@ -50,7 +50,7 @@
                         <div class="card">
                             <img class="card-img-top" src="{{ volunteer.photo.url }}">
                             <div class="card-body">
-                                <h5 class="card-title">Volunteer Of The Month</h5>
+                                <h5 class="card-title">Voluntario del mes</h5>
                                 <h6 class="text-secondary">{{ volunteer.name }}</h6>
                                 <p class="card-text">{{ volunteer.description }}
                                 </p>
@@ -66,7 +66,7 @@
 <!-- Team -->
 <section id="team" class="py-5">
     <div class="container">
-        <h2 class="text-center">Our Team</h2>
+        <h2 class="text-center">Nuestro Equipo</h2>
         <div class="row text-center">
             {% if volunteers %}
                 {% for volunteer in volunteers %}
@@ -74,7 +74,7 @@
                         <img src="{{ volunteer.photo.url }}" alt="" class="rounded-circle mb-3">
                         <h4>{{ volunteer.name }}</h4>
                         <p class="text-success">
-                            <i class="fas fa-award text-success mb-3"></i> Volunteer</p>
+                            <i class="fas fa-award text-success mb-3"></i> Voluntario</p>
                         <hr>
                         <p>
                             <i class="fas fa-phone"></i> {{ volunteer.phone }}</p>

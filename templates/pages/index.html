@@ -9,21 +9,22 @@
             <div class="home-search p-5">
                 <div class="overlay p-5">
                     <h1 class="display-4 mb-4">
-                        Where Pets Find Their People
+                        Donde las mascotas encuntran su hogar
                     </h1>
                     <h3 class="display-6 mb-4">
-                        Thousands of adoptable pets are looking for people. People Like You
+                        Miles de mascotas estaban busando que los adopten. Encuentralo en PawPet!
                     </h3>
                     <br><br>
-                    <a class="btn btn-primary" href="{% url 'pets' %}" role="button"> Find your new friend now </a>
+                    <a class="btn btn-primary" href="{% url 'pets' %}" role="button"> Encuentra a tu mejor amigo ahora </a>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Listings -->
     <section id="listings" class="py-5">
         <div class="container">
-            <h3 class="text-center mb-3">Latest Pets</h3>
+            <h3 class="text-center mb-3">Ultimas mascotas</h3>
             <div class="row">
                 {% if pets %}
                     {% for pet in pets %}
@@ -45,7 +46,7 @@
                     {% endfor %}
                 {% else %}
                     <div class="col-md-12">
-                        <p>No listings available</p>
+                        <p>No hay mascotas disponibles</p>
                     </div>
                 {% endif %}
             </div>
